@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocab Master</title>
+    <title>אתר תרגול להכתבה</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- React & ReactDOM -->
@@ -86,9 +86,9 @@
                         <nav className="hidden md:flex justify-center gap-4 pb-4">
                             <TabBtn active={activeTab === 'dictionary'} onClick={() => setActiveTab('dictionary')} label="מילון" icon="book" />
                             <TabBtn active={activeTab === 'flashcards'} onClick={() => setActiveTab('flashcards')} label="כרטיסיות" icon="layers" />
-                            <TabBtn active={activeTab === 'quiz'} onClick={() => setActiveTab('quiz')} label="מבחן" icon="check-circle" />
-                            <TabBtn active={activeTab === 'writing'} onClick={() => setActiveTab('writing')} label="תרגול כתיבה" icon="pencil" />
-                            <TabBtn active={activeTab === 'hangman'} onClick={() => setActiveTab('hangman')} label="איש תלוי" icon="user-x" />
+                            <TabBtn active={activeTab === 'quiz'} onClick={() => setActiveTab('quiz')} label="מבחן בפירוש המילים" icon="check-circle" />
+                            <TabBtn active={activeTab === 'writing'} onClick={() => setActiveTab('writing')} label="מבחן בכתיבה" icon="pencil" />
+                            <TabBtn active={activeTab === 'hangman'} onClick={() => setActiveTab('hangman')} label="תרגול כתיבת המילים - איש תלוי" icon="user-x" />
                         </nav>
                         {isMenuOpen && (
                             <div className="md:hidden bg-slate-900 border-t border-cyan-900 p-4 flex flex-col gap-2">
